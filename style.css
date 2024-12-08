@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hero-section{
+    background-image: url(IMG_20231222_163219.jpg);
+    background-size: cover  ;
+    background-blend-mode: overlay;
+    background-position-x: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    position: relative;
+    text-align: center ;
+    
+}
+.hero-text{
+    color: blanchedalmond;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+.hero-text>h1{
+    
+    font-size: 88px;
+    width: max-content;
+    margin-bottom: 10px;
+}
+.hero-text>h1::first-letter{
+    color: crimson;
+    cursor: pointer;
+}
+.view-button,
+.know-buttion{
+    background-color: crimson;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 8px 8px 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.view-button:hover,
+.know-buttion:hover{
+    background-color:  rgb(192, 16, 51);
+    transform: scale(1.05);
+}
+.fs-sm{
+    font-size: 0.95rem;
+}
+.myself{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+/*.about-text > h1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 0px;
+}*/
+.about-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    width: fit-content;
+    /* margin-right: 10px; */
+}
+/*.about-text{
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}*/
+.interst{
+    text-align: center;
+}
+.interst ul{
+    display: inline-block;
+    text-align: left;
+}
+.page{
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    background-image: url(NEW.JPG);
+    background-size: cover;
+    /* border-radius: 20px; */
+    padding: 10px;
+}
+.page>h3{
+    font-size: 10px;
+    color: azure;
+    margin-bottom: 5px;
+}
+ul li{
+    list-style: none;
+}
