@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="yovel.png" type="image/x-icon">
+    <title>Yovel</title>
+</head>
+<body>
+    <section class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="hero-text">
+            <h1>Yovel R</h1>
+            <p class="mt-2 fs-sm" style="font-family: Syne Mono, monospace;">...Dive Into My Coding Universe!...<br>More to know</p>
+            <a href="https://yovel-all-site.netlify.app/" target="_blank">
+                <button class="view-button btn btn-danger">Check It</button>
+            </a>
+        </div>
+    </section>
+    <h1 class="text-center mt-4">About Me</h1>
+    <section class="about-section container mt-4 p-0">
+        <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-md-6 p-0">
+                <p>An enthusiastic coder with a keen interest in Java and full-stack development, I continually enhance my skills through challenges and certifications, such as those from HackerRank. Driven by a passion for learning and problem-solving, I'm dedicated to turning complex concepts into streamlined solutions.</p>
+                <br>
+                <p>Currently, I'm working on creating a personal website to showcase my journey and achievements in coding. With a deep curiosity about network security, I'm committed to exploring diverse areas within tech, expanding my knowledge and impact.</p>
+            </div>
+            <div class="col-md-6 p-0 text-center">
+                <h1 class="text-center mt-4">Hobbies</h1>
+                <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
+                    <li><img src="code.png" width="24px" height="24px"> Coding</li>
+                    <li><img src="music.png" width="24px" height="24px"> Music</li>
+                    <li><img src="travel.png" width="24px" height="24px"> Travelling</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- certificate -->
+
+    <section>
+        <h1 class="topic">My Certificates</h1>
+        <div class="certifications">
+
+
+            <!-- HackerRank -->
+            <div class="box">
+                <img class="cr_img" src="Cer1.png" alt="certificate_image" onclick="showFullImage(this)">
+                <div class="para">
+                    <h2>Java (Basic)</h2>
+                    <p>
+                        This journey has sharpened my problem-solving skills and deepened my understanding of algorithms and data structures. 
+                        I'm thrilled to apply these skills in real-world scenarios and continue growing in the world of tech!
+                    </p>
+                </div>
+            </div>
+
+            <!-- HackerRank 1-->
+
+            <div class="box">
+                <img class="cr_img" src="Cer2.png" alt="certificate_image" onclick="showFullImage(this)">
+                <div class="para">
+                    <h2>Problem Solving <br>(Basic)</h2>
+                    <p>
+                        Excited to announce that I've earned my Java Problem Solving Certification from HackerRank! 🎉 It’s been an amazing journey to sharpen my coding skills, tackle challenging problems, and grow as a developer. This certification reflects my dedication to mastering Java and solving real-world coding challenges.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Placemantra -->
+
+            <div class="box">
+                <img class="cr_img" src="cer3.png" alt="certificate_image" onclick="showFullImage(this)">
+                <div class="para">
+                    <h2>Web development<br> Intenship</h2>
+                    <p>
+                        Excited to share that I have successfully completed a web development internship at Placementra, where I honed my skills in creating dynamic and user-friendly web applications!
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Placemantra LOR -->
+
+            <div class="box">
+                <img class="cr_img" src="cer4.png" alt="certificate_image" onclick="showFullImage(this)">
+                <div class="para">
+                    <h2>Letter Of recommendation</h2>
+                    <p>
+                        I am thrilled to have received a Letter of Recommendation from Placementra for successfully completing my web development internship. Grateful for the guidance and opportunity to enhance my skills in building innovative web solutions!
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Placemantra Indus -->
+
+            <div class="box">
+                <img class="cr_img" src="cer5.png" alt="certificate_image" onclick="showFullImage(this)">
+                <div class="para">
+                    <h2>Training</h2>
+                    <p>
+                        I am proud to have received an Industrial Training Certificate from Placementra, recognizing my dedication and growth during the web development training. Thankful for the opportunity to learn and apply my skills in a professional environment!
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Modal for Full Image -->
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img id="fullImage" class="modal-content">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- socoal media -->
+
+
+    <section class="page text-center mt-5 p-1 g-0">
+        <h3>Click here to Follow me:</h3>
+        <a href="https://www.linkedin.com/in/yovel-r-5948182a1/" target="_blank" class="me-3">
+            <img src="325015_linkedin_linked_linked in_logo_social_icon.png" width="20px">
+        </a>
+        <a href="https://www.instagram.com/yovel_edits/" target="_blank">
+            <img src="9024634_instagram_logo_light_icon.png" width="20px">
+        </a>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

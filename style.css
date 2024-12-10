@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hero-section{
+    background-image: url(IMG_20231222_163219.jpg);
+    background-size: cover  ;
+    background-blend-mode: overlay;
+    background-position-x: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    position: relative;
+    text-align: center ;
+    
+}
+.hero-text{
+    color: blanchedalmond;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+.hero-text>h1{
+    
+    font-size: 88px;
+    width: max-content;
+    margin-bottom: 10px;
+}
+.hero-text>h1::first-letter{
+    color: crimson;
+    cursor: pointer;
+}
+.view-button,
+.know-buttion{
+    background-color: crimson;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 8px 8px 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.view-button:hover,
+.know-buttion:hover{
+    background-color:  rgb(192, 16, 51);
+    transform: scale(1.05);
+}
+.fs-sm{
+    font-size: 0.95rem;
+}
+.myself{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+/*.about-text > h1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 0px;
+}*/
+.about-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    width: fit-content;
+    /* margin-right: 10px; */
+}
+/*.about-text{
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}*/
+.interst{
+    text-align: center;
+}
+.interst ul{
+    display: inline-block;
+    text-align: left;
+}
+.page{
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    background-image: url(NEW.JPG);
+    background-size: cover;
+    /* border-radius: 20px; */
+    padding: 10px;
+}
+.page>h3{
+    font-size: 10px;
+    color: azure;
+    margin-bottom: 5px;
+}
+ul li{
+    list-style: none;
+}
+.topic {
+
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1.5rem auto;
+    font-style: italic;
+    box-shadow: 0px 0px 3px rgb(26, 26, 26);
+    padding: 9px;
+    width: fit-content;
+    background-color: rgb(226, 227, 226);
+    border-bottom-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap for smaller screens */
+    gap: 20px; /* Adds space between boxes */
+    justify-content: center; /* Centers items */
+    align-items: flex-start; /* Aligns items at the top */
+    margin: 0 auto; /* Centers the entire certifications container */
+}
+
+.box {
+    display: flex;
+
+    flex-direction: column; /* Stacks image and text */
+    align-items: center; /* Centers content horizontally */
+    gap: 10px; /* Adds spacing between image and text */
+    max-width: 400px; /* Restricts the box width */
+    margin: 10px;
+    margin-top: 2rem;
+    position: relative; /* Positions elements within this container */
+}
+
+.cr_img {
+    position: absolute; /* Position the image absolutely within the para */
+    top: -10%; /* Align to the top of the para */
+    left: -2%; /* Align to the left of the para */
+    width: 6rem; /* Set the size of the image */
+    background-color: rgb(103, 1, 1);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.para {
+    position: relative; 
+    margin-top: 2rem;
+    padding: 1.3rem;
+    background: linear-gradient(0deg, rgba(134,0,0,1) 0%, rgba(31,0,0,1) 100%);
+    border-bottom-right-radius: 5rem;
+    box-shadow: 0 5px 10px rgba(65, 0, 37, 0.786);
+    width: 100%; 
+    font-size: 0.8rem;
+    min-height: 18rem;
+    color: aliceblue;
+    padding-left: 3.5rem; 
+    transition: all 1s ease;
+}
+.para:hover{
+    background: linear-gradient(0deg,  rgba(31,0,0,1) 0%, rgba(134,0,0,1) 100%);
+
+}
+
+.para > h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
