@@ -63,24 +63,15 @@ img {
     width: 50%;
     text-align: center;
 }
-/*.about-text > h1{
-    text-align: center;
-    text-decoration: underline;
-    margin: 10px 0px;
-}*/
+
 .about-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 10px;
     width: fit-content;
-    /* margin-right: 10px; */
 }
-/*.about-text{
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
-}*/
+
 .interst{
     text-align: center;
 }
@@ -88,20 +79,66 @@ img {
     display: inline-block;
     text-align: left;
 }
-.page{
-    margin-top: 100px;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    background-image: url(NEW.JPG);
-    background-size: cover;
-    /* border-radius: 20px; */
-    padding: 10px;
+
+.page {
+    background-color: #2C2C2C;
+    color: #FFFFF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    font-family: "Space Grotesk", sans-serif;
 }
-.page>h3{
-    font-size: 10px;
-    color: azure;
-    margin-bottom: 5px;
+
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
 }
+
+.foot-img {
+    width: 24rem;
+    right: 1rem;
+    transform: translate(0%, -53.8%);
+    position: absolute;
+    margin: 0px;
+}
+
+.smedia {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%; 
+}
+
+.smedia-links {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.smedia-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.smedia-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.smedia-item label {
+    flex: 1;
+    text-align: left;
+}
+
+
+
 ul li{
     list-style: none;
 }
@@ -121,30 +158,34 @@ ul li{
 
 .certifications {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap for smaller screens */
-    gap: 20px; /* Adds space between boxes */
-    justify-content: center; /* Centers items */
-    align-items: flex-start; /* Aligns items at the top */
-    margin: 0 auto; /* Centers the entire certifications container */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
 .box {
     display: flex;
-
-    flex-direction: column; /* Stacks image and text */
-    align-items: center; /* Centers content horizontally */
-    gap: 10px; /* Adds spacing between image and text */
-    max-width: 400px; /* Restricts the box width */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+    max-width: 400px; 
     margin: 10px;
     margin-top: 2rem;
-    position: relative; /* Positions elements within this container */
+    position: relative;
+}
+.no-style,
+.no-style1:hover{
+    color: inherit; 
+    text-decoration: none;
 }
 
 .cr_img {
-    position: absolute; /* Position the image absolutely within the para */
-    top: -10%; /* Align to the top of the para */
-    left: -2%; /* Align to the left of the para */
-    width: 6rem; /* Set the size of the image */
+    position: absolute;
+    top: -10%; 
+    left: -2%; 
+    width: 6rem; 
     background-color: rgb(103, 1, 1);
     border-radius: 50%;
     padding: 5px;
@@ -152,6 +193,7 @@ ul li{
     cursor: pointer;
     z-index: 1;
 }
+
 
 .para {
     position: relative; 
@@ -177,15 +219,19 @@ ul li{
     font-size: 1.5rem;
     text-align: center;
 }
+.dis{
+    color: red;
+    text-align: center;
+}
 
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    background-color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
     z-index: 1000;

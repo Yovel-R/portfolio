@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,16 +24,18 @@
         </div>
     </section>
     <h1 class="text-center mt-4">About Me</h1>
-    <section class="about-section container mt-4 p-0">
-        <div class="container-fluid p-0">
+    <section class="about-section container mt-4">
         <div class="row g-0">
-            <div class="col-md-6 p-0">
+
+            <!-- Text content -->
+            <div class="col-12 col-md-6 p-2">
                 <p>An enthusiastic coder with a keen interest in Java and full-stack development, I continually enhance my skills through challenges and certifications, such as those from HackerRank. Driven by a passion for learning and problem-solving, I'm dedicated to turning complex concepts into streamlined solutions.</p>
-                <br>
                 <p>Currently, I'm working on creating a personal website to showcase my journey and achievements in coding. With a deep curiosity about network security, I'm committed to exploring diverse areas within tech, expanding my knowledge and impact.</p>
             </div>
-            <div class="col-md-6 p-0 text-center">
-                <h1 class="text-center mt-4">Hobbies</h1>
+    
+            <!-- Hobbies content -->
+            <div class="col-12 col-md-6 p-2 text-center">
+                <h1 class="mt-4">Hobbies</h1>
                 <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
                     <li><img src="code.png" width="24px" height="24px"> Coding</li>
                     <li><img src="music.png" width="24px" height="24px"> Music</li>
@@ -40,14 +43,15 @@
                 </ul>
             </div>
         </div>
-        </div>
     </section>
+    
 
 
     <!-- certificate -->
 
     <section>
         <h1 class="topic">My Certificates</h1>
+        <h6 class="dis" style="font-size: 0.7rem;"><i>* Click on Certificate icon to see in full size *</i></h6>
         <div class="certifications">
 
 
@@ -103,7 +107,7 @@
 
             <!-- Placemantra Indus -->
 
-            <div class="box">
+            <div class="box" style="margin-bottom: 4rem;">
                 <img class="cr_img" src="cer5.png" alt="certificate_image" onclick="showFullImage(this)">
                 <div class="para">
                     <h2>Training</h2>
@@ -122,18 +126,47 @@
     </section>
 
 
-    <!-- socoal media -->
+    <!-- Fotter -->
 
 
     <section class="page text-center mt-5 p-1 g-0">
-        <h3>Click here to Follow me:</h3>
-        <a href="https://www.linkedin.com/in/yovel-r-5948182a1/" target="_blank" class="me-3">
-            <img src="325015_linkedin_linked_linked in_logo_social_icon.png" width="20px">
-        </a>
-        <a href="https://www.instagram.com/yovel_edits/" target="_blank">
-            <img src="9024634_instagram_logo_light_icon.png" width="20px">
-        </a>
+        <div class="profile-container">
+            <img class="foot-img" src="me.png" alt="Profile Picture">
+        </div>
+        <!-- Bootstrap row and column classes -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-start" style="margin-bottom: 2rem;">Find me at</h2> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 smedia">
+                    <div class="smedia-links">
+                        <div class="smedia-item">
+                            <img src="github.png" alt="GitHub">
+                            <label><a href="https://github.com/Yovel-R" class="no-style"> Yovel-R <i class="fa-solid fa-arrow-right"></i></a></label>
+                        </div>
+                        <div class="smedia-item">
+                            <img src="linkedin.png" alt="LinkedIn">
+                            <label><a href="https://www.linkedin.com/in/yovel-r-5948182a1/" class="no-style"> iam_yovel <i class="fa-solid fa-arrow-right"></i></a></label>
+                        </div>
+                        <div class="smedia-item">
+                            <img src="insta.png" alt="Instagram">
+                            <label><a href="https://www.instagram.com/iam_yovel?igsh=ZXZhejB2aW9hejd2" class="no-style">yovel <i class="fa-solid fa-arrow-right"></i></a></label>
+                        </div>
+                        <div class="smedia-item" style="margin-bottom: 2rem;">
+                            <img src="gmail.png" alt="Gmail">
+                            <label><a href="mailto:yovel2911@gmail.com" class="no-style">yovel2911@gmail.com <i class="fa-solid fa-arrow-right"></i></a></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
