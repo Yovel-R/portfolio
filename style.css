@@ -73,6 +73,7 @@ img {
 }
 
 .interst{
+    justify-content: center;
     text-align: center;
 }
 .interst ul{
@@ -140,6 +141,7 @@ img {
 
 
 ul li{
+    margin-bottom: 0.8rem;
     list-style: none;
 }
 .topic {
@@ -265,4 +267,60 @@ ul li{
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.hidden-content {
+    display: none; 
+}
+.view-more-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: auto; /* Pushes the "View More" button to the bottom */
+    margin-bottom: 4rem; /* Ensures there is space below the button */
+}
+
+.view-more {
+    display: inline-block;
+
+    margin-top: auto;
+    margin-bottom: 4rem;
+    padding: 10px 20px;
+    background-color: #2c2c2c93;
+    color: #FFFFF0;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.viewMoreBtn i {
+    transition: transform 0.3s ease; 
+}
+
+.moreContent {
+    display: block; 
+}
+
+
+/* animation */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.profile-container {
+    opacity: 0;
+    transform: translateX(-100%); 
+    transition: opacity 0.9s ease;
+}
+
+.profile-container.visible {
+    animation: slideInFromLeft 1.5s ease forwards;
 }

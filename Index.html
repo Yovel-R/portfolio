@@ -35,7 +35,7 @@
     
             <!-- Hobbies content -->
             <div class="col-12 col-md-6 p-2 text-center">
-                <h1 class="mt-4">Hobbies</h1>
+                <h1 class="mt-4" style="margin-bottom: 2rem;">Hobbies</h1>
                 <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
                     <li><img src="code.png" width="24px" height="24px"> Coding</li>
                     <li><img src="music.png" width="24px" height="24px"> Music</li>
@@ -78,15 +78,14 @@
                 </div>
             </div>
 
-            <!-- HackerRank 1-->
+            <!-- Smart India hackothon-->
 
             <div class="box">
-                <img class="cr_img" src="Cer2.png" alt="certificate_image" onclick="showFullImage(this)">
+                <img class="cr_img" src="cer6.png" alt="certificate_image" onclick="showFullImage(this)">
                 <div class="para">
-                    <h2>Problem Solving<br></h2>
+                    <h2>Smart India Hack<br></h2>
                     <p>
-                        Excited to announce that I've earned my Java Problem Solving Certification from HackerRank! 🎉 It’s been an amazing journey to sharpen my coding skills, tackle challenging problems, and grow as a developer. This certification reflects my dedication to mastering Java and solving real-world coding challenges.
-                    </p>
+                        I am excited to be part of the Smart India Hackathon, collaborating with my talented team: Mr. Praveen, Mr. Sairam, Mr. Saikarthikayan, myself (Yovel), Mrs. Sowmika, and Mrs. Seneha. Together, we aim to solve real-world challenges with innovative solutions, demonstrating our skills and teamwork in this prestigious event.                    </p>
                 </div>
             </div>
 
@@ -115,10 +114,28 @@
                 </div>
             </div>
 
-
-            <!-- Placemantra Indus -->
+            <!-- Problem Solving -->
 
             <div class="box" style="margin-bottom: 4rem;">
+                <img class="cr_img" src="Cer2.png" alt="certificate_image" onclick="showFullImage(this)">
+                <div class="para">
+                    <h2>Problem Solving</h2>
+                    <p>
+                        Excited to announce that I've earned my Java Problem Solving Certification from HackerRank! 🎉 It’s been an amazing journey to sharpen my coding skills, tackle challenging problems, and grow as a developer. This certification reflects my dedication to mastering Java and solving real-world coding challenges.
+                    </p>
+                </div>
+            </div>
+        
+            <!-- in view more -->
+        </div>
+        
+            <span class="hidden-content moreContent">
+            <div class="certifications"> 
+
+
+
+                <!-- certificate 1 -->
+                <div class="box">
                 <img class="cr_img" src="cer5.png" alt="certificate_image" onclick="showFullImage(this)">
                 <div class="para">
                     <h2>Training</h2>
@@ -126,15 +143,35 @@
                         I am proud to have received an Industrial Training Certificate from Placementra, recognizing my dedication and growth during the web development training. Thankful for the opportunity to learn and apply my skills in a professional environment!
                     </p>
                 </div>
+                </div>
+            
+                <!-- certificate 2 -->
+                <div class="box" style="margin-bottom: 4rem;">
+                    <img class="cr_img" src="cer5.png" alt="certificate_image" onclick="showFullImage(this)">
+                    <div class="para">
+                        <h2>Demo (Avoid for now)</h2>
+                        <p>
+                            I am proud to have received an Industrial Training Certificate from Placementra, recognizing my dedication and growth during the web development training. Thankful for the opportunity to learn and apply my skills in a professional environment!..
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
-    
+            </span>
+            <div class="view-more-container">
+            <span class="view-more viewMoreBtn">View More <i class="fa-solid fa-angle-down"></i>
+            
+            </span>
+            </div>
             <!-- Modal for Full Image -->
             <div id="imageModal" class="modal" onclick="closeModal()">
                 <span class="close">&times;</span>
                 <img id="fullImage" class="modal-content">
             </div>
-        </div>
+        
     </section>
+            
 
 
     <!-- Fotter -->
@@ -176,9 +213,19 @@
         </div>
     </section>
     
-    
+    <!-- Bootstrap -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Certificate view  -->
+
     <script src="script.js"></script>
+
+    <!-- animation -->
+
+    <script src="anima.js"></script>
+
+    <!-- moreContent -->
+     <script src="more.js"></script>
 </body>
 </html>
