@@ -150,10 +150,11 @@ ul li{
     text-align: center;
     margin: 1.5rem auto;
     font-style: italic;
-    box-shadow: 0px 0px 3px rgb(26, 26, 26);
+    background-color: #f5f5f5; /* Light Gray */
+    box-shadow: 0 4px 8px rgba(50, 50, 50, 0.2), 0 0 10px rgba(100, 100, 100, 0.4); /* Neutral shadow */              
+    color: #5a3e2b; /* Warm and earthy for a unique style */
     padding: 9px;
     width: fit-content;
-    background-color: rgb(226, 227, 226);
     border-bottom-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
 }
