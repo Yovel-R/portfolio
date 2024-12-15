@@ -308,16 +308,30 @@ ul li{
 
 
 /* animation */
+/* Slide in from left */
 @keyframes slideInFromLeft {
     from {
         transform: translateX(-100%);
-        opacity: 1;
+        opacity: 0;
     }
     to {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
+/* Slide up from below */
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 .profile-container {
     opacity: 0;
@@ -327,4 +341,15 @@ ul li{
 
 .profile-container.visible {
     animation: slideInFromLeft 1.5s ease forwards;
+}
+
+/* Box animation */
+.box {
+    opacity: 0;
+    transform: translateY(25%);
+    transition: opacity 0.9s ease;
+}
+
+.box.visible {
+    animation: slideInFromBottom 1.5s ease forwards; 
 }

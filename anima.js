@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Animate profile container
     const profileContainer = document.querySelector(".profile-container");
-
-    const observer = new IntersectionObserver((entries) => {
+    const profileObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 profileContainer.classList.add("visible");
@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    profileObserver.observe(profileContainer);
 
-    observer.observe(profileContainer);
+    // Animate boxes
+    const boxes = document.querySelectorAll(".box");
+    const boxObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            } else {
+                entry.target.classList.remove("visible");
+            }
+        });
+    });
+
+    boxes.forEach((box) => boxObserver.observe(box));
 });
