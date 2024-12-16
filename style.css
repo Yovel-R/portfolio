@@ -324,7 +324,7 @@ ul li{
 @keyframes slideInFromBottom {
     from {
         transform: translateY(25%);
-        opacity: 0;
+        opacity: 1;
     }
     to {
         transform: translateY(0);
@@ -334,7 +334,7 @@ ul li{
 
 
 .profile-container {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(-100%); 
     transition: opacity 0.9s ease;
 }
