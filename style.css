@@ -312,7 +312,7 @@ ul li{
 @keyframes slideInFromLeft {
     from {
         transform: translateX(-100%);
-        opacity: 0;
+        opacity: 1;
     }
     to {
         transform: translateX(0);
@@ -324,7 +324,7 @@ ul li{
 @keyframes slideInFromBottom {
     from {
         transform: translateY(25%);
-        opacity: 1;
+        opacity: 0;
     }
     to {
         transform: translateY(0);
